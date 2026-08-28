@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pe-deal-engine"
+version = "0.1.0"
+description = "Private equity valuation and deal analysis: DCF and LBO on one assumption engine"
+requires-python = ">=3.11"
+dependencies = ["pandas>=2.0", "numpy>=1.24", "scipy>=1.11"]
+
+[tool.setuptools.packages.find]
+# Only the calculation engine is distributed. The Streamlit interface is an entry point of
+# this repo rather than part of the library, and a consumer importing the DCF and LBO models
+# should not be made to install a web framework to get them.
+include = ["pe_engine*"]
