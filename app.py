@@ -75,7 +75,6 @@ st.caption(
 
 with st.sidebar:
     st.header("Assumptions")
-    st.caption("Everything the model knows. Nothing is hard-coded.")
 
     with st.expander("Company", expanded=True):
         name = st.text_input("Name", "Meridian Industrial")
