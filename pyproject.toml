@@ -7,7 +7,7 @@ name = "pe-deal-engine"
 version = "0.1.0"
 description = "Private equity valuation and deal analysis: DCF and LBO on one assumption engine"
 requires-python = ">=3.11"
-dependencies = ["pandas>=2.0", "numpy>=1.24", "scipy>=1.11"]
+dependencies = ["pandas>=2.0", "numpy>=1.24"]
 
 [tool.setuptools.packages.find]
 # Only the calculation engine is distributed. The Streamlit interface is an entry point of

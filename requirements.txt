@@ -1,11 +1,8 @@
-# Core
+# Runtime dependencies for the deployed app. Deliberately minimal: this engine does no
+# fetching, no statistics beyond arithmetic, and needs no API keys, so the build stays small
+# and fast. Test-only dependencies live in requirements-dev.txt rather than here, since a
+# deployment should not install a test runner.
 pandas>=2.0
 numpy>=1.24
-scipy>=1.11
-
-# App
 streamlit>=1.30
 plotly>=5.20
-
-# Tests
-pytest>=8.0
